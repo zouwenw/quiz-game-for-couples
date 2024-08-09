@@ -26,7 +26,7 @@ body {
   left: 50%;
   position: absolute;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   padding: 20px;
   box-sizing: border-box;
   display: none;
@@ -117,6 +117,7 @@ input[type="text"] {
   height: 30px;
   width: 100%;
   font-size: 16px;
+  box-sizing: border-box;
 }
 input:focus-visible {
   outline: none;
@@ -391,7 +392,7 @@ canvas {
   line-height: 1.5;
   /* -webkit-text-stroke: 1px rgb(248, 82, 82); */
   text-shadow: -1px 0 1px #f5e6c2, 0 1px 2px #fff0c9;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 @keyframes showContent {
