@@ -25,11 +25,6 @@ var answerObj = {
   group3: "",
   group4: "",
   group5: "",
-  group6: "",
-  group7: "",
-  group8: "",
-  group9: "",
-  group10: "",
 };
 var active = document.getElementById("active");
 var textCount = document.getElementById("textCount");
@@ -46,7 +41,7 @@ function showQuesBtn() {
   } else {
     prev.style.display = "inline-block";
   }
-  if (showFlag === 11 || showFlag === 0) {
+  if (showFlag === 6 || showFlag === 0) {
     next.style.display = "none";
     textCount.style.display = "none";
   } else {
@@ -73,7 +68,7 @@ prev.addEventListener("click", function () {
 next.addEventListener("click", function () {
   const errorText = document.getElementsByClassName("error-text");
   const targetName = `group${showFlag}`
-  const validFlags = [1, 2, 3, 4, 8];
+  const validFlags = [1];
   const listDiv = document.getElementsByClassName('list')
   if ( answerObj[targetName] === "") {
     if (errorText.length === 0) {
@@ -130,16 +125,11 @@ function deepEqual(a, b) {
 }
 submit.addEventListener("click", function () {
   let correctObj = {
-    group1: "2024/6/4",
-    group2: "2024/6/10",
-    group3: "2024/6/22",
-    group4: "37",
+    group1: "37",
+    group2: "option3",
+    group3: "option3",
+    group4: "option3",
     group5: "option3",
-    group6: "option3",
-    group7: "option3",
-    group8: "刘亦菲",
-    group9: "option2",
-    group10: "option3",
   };
   const isTrue = deepEqual(correctObj, answerObj);
   mask.style.display = "block";
